@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: string_utils
+Version: 0.1.0
+Summary: Advanced string manipulation utilities.
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/AmitActiveFence/string_utils
+Project-URL: Bug Tracker, https://github.com/AmitActiveFence/string_utils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: textplus
+Requires-Dist: regex>=2024.11.6; extra == "textplus"
+Requires-Dist: regex<0; python_version >= "3.12" and extra == "textplus"
+
+# string_utils
+
+Advanced string manipulation utilities for Python.
+
+## Features
+- Palindrome detection
+- Anagram checking
+- String normalization (Unicode, case, whitespace)
+- Substring search (KMP algorithm)
+- Levenshtein distance
+- Customizable string tokenization
+
+## Installation
+```bash
+pip install .
+```
+
+## Usage
+```python
+from string_utils.advanced import is_palindrome, are_anagrams, normalize_string, kmp_search, levenshtein_distance, tokenize
+
+print(is_palindrome("A man a plan a canal Panama"))
+print(are_anagrams("listen", "silent"))
+print(normalize_string("  Café   au Lait  "))
+print(kmp_search("ababcabcabababd", "ababd"))
+print(levenshtein_distance("kitten", "sitting"))
+print(tokenize("a,b;c.d", delimiters=",;.", keep_delimiters=True))
+```
+
+## Testing
+```bash
+pytest
+```

@@ -1,0 +1,6 @@
+
+[textplus]
+regex>=2024.11.6
+
+[textplus:python_version >= "3.12"]
+regex<0

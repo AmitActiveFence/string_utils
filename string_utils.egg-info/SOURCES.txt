@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+string_utils/__init__.py
+string_utils/advanced.py
+string_utils.egg-info/PKG-INFO
+string_utils.egg-info/SOURCES.txt
+string_utils.egg-info/dependency_links.txt
+string_utils.egg-info/requires.txt
+string_utils.egg-info/top_level.txt
+tests/test_advanced.py
