@@ -2,6 +2,7 @@
 Advanced string manipulation utilities.
 """
 
+import base64tools
 import unicodedata
 from typing import List, Tuple
 
@@ -91,3 +92,8 @@ def tokenize(s: str, delimiters: str = ' ', keep_delimiters: bool = False) -> Li
     else:
         pattern = f'[{re.escape(delimiters)}]+'
         return [t for t in re.split(pattern, s) if t]
+
+
+def string_to_base64(s: str, encoding: str = 'utf-8') -> str:
+    """Convert a string to a Base64-encoded string."""
+    return base64tools.b64encode(s.encode(encoding)).decode('ascii')
