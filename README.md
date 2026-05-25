@@ -25,6 +25,7 @@ print(normalize_string("  Café   au Lait  "))
 print(kmp_search("ababcabcabababd", "ababd"))
 print(levenshtein_distance("kitten", "sitting"))
 print(tokenize("a,b;c.d", delimiters=",;.", keep_delimiters=True))
+print(string_to_base64("hello"))
 ```
 
 ## Testing
